@@ -1,16 +1,104 @@
-# React + Vite
+RBT Assist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RBT Assist is a secure full-stack web application built using React, Vite, and Supabase.
+The purpose of this project is to demonstrate authentication, protected routing, and backend integration in a production-style React application.
 
-Currently, two official plugins are available:
+🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+RBT Assist simulates a secure tool designed for Registered Behavior Technicians (RBTs).
 
-## React Compiler
+The application allows users to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Create an account (Sign Up)
 
-## Expanding the ESLint configuration
+Confirm email
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Log in securely
+
+Access a protected Dashboard
+
+Maintain session state
+
+Log out securely
+
+Prevent unauthorized access to protected routes
+
+🛠 Tech Stack
+
+React
+
+Vite
+
+Supabase (Authentication + Backend)
+
+React Router DOM
+
+Git + GitHub
+
+🔐 Authentication & Security
+
+This application uses Supabase Authentication with:
+
+Email/password signup
+
+Email confirmation flow
+
+Secure login
+
+Session persistence
+
+ProtectedRoute component for route protection
+
+Secure logout
+
+📂 Project Structure
+
+src/
+
+pages/
+
+Login.jsx
+
+Signup.jsx
+
+Dashboard.jsx
+
+components/
+
+ProtectedRoute.jsx
+
+lib/
+
+supabaseClient.js
+
+⚙️ Environment Variables
+
+Create a .env.local file:
+
+VITE_SUPABASE_URL=your_project_url
+VITE_SUPABASE_ANON_KEY=your_publishable_key
+
+🧪 Running the Project
+
+Install dependencies
+npm install
+
+Start development server
+npm run dev
+
+Open
+http://localhost:5173
+
+🎯 Purpose of This Project
+
+This project demonstrates:
+
+Full-stack authentication
+
+Backend integration with Supabase
+
+Protected routing in React
+
+Environment variable configuration
+
+Git workflow and GitHub deployment
